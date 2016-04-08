@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubUserInfo", "GitHubUserInfo\GitHubUserInfo.csproj", "{5E09ED86-9D69-4B49-9F67-2E8A217BAC3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubUserInfo.Tests", "GitHubUserInfo.Tests\GitHubUserInfo.Tests.csproj", "{DC9F7C2C-E364-4E02-BC97-D25C7C67FF2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E09ED86-9D69-4B49-9F67-2E8A217BAC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E09ED86-9D69-4B49-9F67-2E8A217BAC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E09ED86-9D69-4B49-9F67-2E8A217BAC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E09ED86-9D69-4B49-9F67-2E8A217BAC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9F7C2C-E364-4E02-BC97-D25C7C67FF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9F7C2C-E364-4E02-BC97-D25C7C67FF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9F7C2C-E364-4E02-BC97-D25C7C67FF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9F7C2C-E364-4E02-BC97-D25C7C67FF2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
