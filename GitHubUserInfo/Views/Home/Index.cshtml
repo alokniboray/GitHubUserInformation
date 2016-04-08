@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "GitHub user Information";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                 <h2>@ViewBag.Message</h2>
+            </hgroup>
+         </div>
+    </section>
+}
+<table>
+    <tr>
+        <td>
+            User Name:
+        </td>
+        <td>
+            <input type="text" data-bind="value: UserName" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+        <td>
+            <button onclick="UserModule.UserInformation.GetData();return false;">
+                GetData
+            </button>
+        </td>
+    </tr>
+</table>
+<br />
+<!-- ko if: Information() && Information().login && (Information().login() == UserName())-->
+<table>
+    <tr>
+        <td>
+            User Name :
+        </td>
+        <td>
+            <span data-bind="text: Information().login"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Avatar :
+        </td>
+        <td>
+            <img data-bind="attr:{src: Information().avatar_url}" style="height: 85px; width: 138px" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Location :
+        </td>
+        <td>
+            <span data-bind="text: Information().location"></span>
+        </td>
+    </tr>
+    <td>
+        Total Repos :
+    </td>
+    <td>
+        <span data-bind="text: Repository().length"></span>
+    </td>
+    <tr>
+    </tr>
+</table>
+<br />
+<h2>
+    Top 5 stargazers
+</h2>
+<!-- ko if: Repository().length > 0-->
+<table>
+    <tr>
+        <td>
+            <b>Sr No.</b>
+        </td>
+        <td>
+            <b>Repo Name</b>
+        </td>
+        <td>
+            <b>Stargazer Count</b>
+        </td>
+    </tr>
+    <!-- ko foreach: Repository -->
+    <!-- ko if: $index() < 5-->
+    <tr>
+        <td>
+            <span data-bind="text: $index() + 1"></span>
+        </td>
+        <td>
+            <span data-bind="text: name"></span>
+        </td>
+        <td>
+            <span data-bind="text: stargazers_count"></span>
+        </td>
+    </tr>
+    <!-- /ko -->
+    <!-- /ko -->
+</table>
+<!-- /ko -->
+<!-- /ko -->
